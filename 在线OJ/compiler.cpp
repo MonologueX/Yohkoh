@@ -13,7 +13,7 @@ int main()
             {
                 (void)req;
                 // 根据具体的场景，根据请求，计算出响应结果
-                resp.set_content("<html>汤老湿，你好啊</html>", "test/html");
+                resp.set_content("<html>hello word</html>", "text/html");
             });
     server.listen("0.0.0.0", 9001);
     return 0;
