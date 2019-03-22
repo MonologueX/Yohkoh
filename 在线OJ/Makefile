@@ -1,6 +1,6 @@
-compiler:compiler.cpp 
-	g++ -std=c++11 compiler.cpp -o compiler -lpthread
+test:test.cpp 
+	g++ -std=c++11 test.cpp -o test -lpthread -ljsoncpp
 
 .PHONY:clean
 clean:
-	rm -f compiler
+	rm -f test

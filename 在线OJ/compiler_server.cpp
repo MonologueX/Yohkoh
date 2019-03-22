@@ -1,4 +1,6 @@
 #include "httplib.h"
+#include "compiler.hpp"
+#include <jsoncpp/json/json.h>
 
 int main()
 {
@@ -12,8 +14,13 @@ int main()
     server.Get("/", [](const Request& req, Response& resp)
             {
                 (void)req;
+                // 调用 CompileAndRun
+                Json::Value req_json;
+                Json::Value resp_json;
+                Compiler::CompilerAndRun(req_json, &resp_json);
                 // 根据具体的场景，根据请求，计算出响应结果
-                resp.set_content("<html>hello word</html>", "text/html");
+                Json::FastWriter writer;
+                resp.set_content("writer.write(resp_json)", "text/plain");
             });
     server.listen("0.0.0.0", 9001);
     return 0;

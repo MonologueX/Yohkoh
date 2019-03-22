@@ -7,9 +7,12 @@
 
 #pragma once 
 #include <iostream>
+#include <unistd.h>
 #include <string>
 #include <stdint.h>
+#include <fstream>
 #include <sys/time.h>
+
 
 ///////////////////////////////////////////////
 //  时间戳
@@ -22,14 +25,14 @@ class TimeUtil
         static int64_t TimeStamp()
         {
             struct timeval tv;
-            ::gettimeofday(&tv, nullptr);
+            ::gettimeofday(&tv, NULL);
             return tv.tv_sec;
         }
 
         static int64_t TimeStampMS()
         {
             struct timeval tv;
-            ::gettimeofday(&tv, nullptr);
+            ::gettimeofday(&tv, NULL);
             return tv.tv_sec * 1000 + tv.tv_usec / 1000;
         }
     private:
@@ -44,26 +47,25 @@ enum Level
     INFO,
     WARING,
     ERROR,
-    FATAL
+    FATAL,
 };
 
-inline std::ostream& Log(Level level, const std::string& msg,
-        const std::string& file_name, int line_num)
+inline std::ostream& Log(Level level, const std::string& file_name, int line_num)
 {
     std::string prefix = "[";
     if (level == INFO)
     {
         prefix += "I";
     }
-    if (level == WARING)
+    else if (level == WARING)
     {
         prefix += "W";
     }
-    if (level == ERROR)
+    else if (level == ERROR)
     {
         prefix += "E";
     }
-    if (level == FATAL)
+    else if (level == FATAL)
     {
         prefix += "F";
     }
@@ -78,3 +80,41 @@ inline std::ostream& Log(Level level, const std::string& msg,
 }
 
 #define LOG(level) Log(level, __FILE__, __LINE__)
+
+///////////////////////////////////////////////
+//  文件
+///////////////////////////////////////////////
+
+class FileUtil
+{
+    public:
+        static bool Read(const std::string& file_path, std::string* content)
+        {
+            content->clear();
+            std::ifstream file(file_path.c_str());
+            if (!file.is_open())
+            {
+                return false;
+            }
+            std::string line;
+            while (std::getline(file, line))
+            {
+                *content += line + '\n';
+            }
+            file.close();
+            return true;
+        }
+        static bool Write(const std::string& file_path, const std::string& content)
+        {
+            std::ofstream file(file_path.c_str());
+            if (!file.is_open())
+            {
+                return false;
+            }
+            file.write(content.c_str(), content.size());
+            file.close();
+            return true;
+        }
+    private:
+};
+
