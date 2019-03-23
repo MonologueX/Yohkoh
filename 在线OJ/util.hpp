@@ -7,12 +7,14 @@
 
 #pragma once 
 #include <iostream>
-#include <unistd.h>
+#include <vector>
+#include <unordered_map>
 #include <string>
 #include <stdint.h>
 #include <fstream>
+#include <unistd.h>
 #include <sys/time.h>
-
+#include <boost/algorithm/string.hpp>
 
 ///////////////////////////////////////////////
 //  时间戳
@@ -117,4 +119,67 @@ class FileUtil
         }
     private:
 };
+
+///////////////////////////////////////////////
+//  body解析
+///////////////////////////////////////////////
+
+class StringUtil
+{
+    public:
+        static void Spilt(const std::string& input, const std::string& spilt_char, std::vector<std::string>* output)
+        {
+            boost::split(*output, input, boost::is_any_of(spilt_char), boost::token_compress_off);
+        }
+    private:
+};
+
+class UrlUtil
+{
+    public:
+        static void ParseBody(const std::string& body, std::unordered_map<std::string, std::string>* params)
+        {
+            // 1. 把body切分成键值对的形式
+            //    按照 & 符号切分
+            //    按照 = 切分
+            std::vector<std::string> kvs;
+            StringUtil::Spilt(body, "&", &kvs);
+            for (size_t i = 0; i <kvs.size(); ++i)
+            {
+                std::vector<std::string> kv;
+                StringUtil::Spilt(kvs[i], "=", &kv);
+                if (2 != kv.size())
+                {
+                    continue;
+                }
+                (*params)[kv[0]] = UrlDecode(kv[1]);
+            }
+
+            // 2. 对键值对进行 urldecode
+        }
+    private:
+        static std::string UrlDecode(const std::string& str)
+        {}
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

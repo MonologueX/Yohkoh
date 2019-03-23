@@ -5,7 +5,7 @@
 int main()
 {
     Json::Value req;
-    req["code"] = "#include <stdio.h> \n int main() {printf(\"hehe\");retuen 0;}";
+    req["code"] = "#include <stdio.h> \n int main() {printf(\"hehe\");return 0;}";
     req["stdin"] = "";
     Json::Value resp;
     Compiler::CompilerAndRun(req, &resp);
