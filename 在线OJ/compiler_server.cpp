@@ -27,8 +27,9 @@ int main()
         Compiler::CompilerAndRun(req_json, &resp_json);
         // 根据具体的场景，根据请求，计算出响应结果
         Json::FastWriter writer;
-        resp.set_content("writer.write(resp_json)", "text/plain");
+        resp.set_content(writer.write(resp_json), "text/plain");
     });
+    server.set_base_dir("./wwwroot");
     server.listen("0.0.0.0", 9001);
     return 0;
-    }
+}
