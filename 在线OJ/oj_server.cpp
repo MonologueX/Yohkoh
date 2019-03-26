@@ -50,8 +50,7 @@ int main()
         
         std::string html;
         OjView::RenderResult(resp_json["stdout"].asString(), resp_json["reason"].asString(), &html);
-        Json::FastWriter writer;
-        resp.set_content(writer.write(resp_json), "text/plain");
+        resp.set_content(html, "text/html");
     });
     server.set_base_dir("./wwwroot");
     server.listen("0.0.0.0", 9001);

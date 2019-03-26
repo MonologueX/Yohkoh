@@ -16,7 +16,7 @@ public:
         }
 
         ctemplate::Template* tpl;
-        tpl = ctemplate::Template::GetTemplate("./template/all_questions.html", ctemplate::DO_NOT_STRIP);
+        tpl = ctemplate::Template::GetTemplate("./wwwroot/all_questions.html", ctemplate::DO_NOT_STRIP);
         tpl->Expand(html, &dict);
     }
 
@@ -31,7 +31,18 @@ public:
         dict.SetValue("header", question.header_cpp);
 
         ctemplate::Template* tpl;
-        tpl = ctemplate::Template::GetTemplate("./template/question.html", ctemplate::DO_NOT_STRIP);
+        tpl = ctemplate::Template::GetTemplate("./wwwroot/question.html", ctemplate::DO_NOT_STRIP);
+        tpl->Expand(html, &dict);
+    }
+    static void RenderResult(const std::string& str_stdout, const std::string& reason, std::string* html)
+    {
+        ctemplate::TemplateDictionary dict("result");
+
+        dict.SetValue("stdout", str_stdout);
+        dict.SetValue("reason", reason);
+
+        ctemplate::Template* tpl;
+        tpl = ctemplate::Template::GetTemplate("./wwwroot/result.html", ctemplate::DO_NOT_STRIP);
         tpl->Expand(html, &dict);
     }
 };

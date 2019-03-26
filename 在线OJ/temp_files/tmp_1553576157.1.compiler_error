@@ -1,0 +1,4 @@
+./temp_files/tmp_1553576157.1.cpp: In function ‘void Test1()’:
+./temp_files/tmp_1553576157.1.cpp:16:18: error: ‘class Solution’ has no member named ‘IsPalindrome’
+     bool ret = s.IsPalindrome(121);
+                  ^

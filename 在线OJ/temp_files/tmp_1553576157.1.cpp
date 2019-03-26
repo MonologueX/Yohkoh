@@ -1,3 +1,12 @@
+#include <iostream>
+class Solution 
+{
+public:
+    bool IsPalindeome(int x)
+    {
+         return true;
+    }
+};
 
 void Test1()
 {
