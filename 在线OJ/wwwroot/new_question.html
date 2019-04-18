@@ -1,14 +1,48 @@
-<html>
-    <head>
-        <meta http-equiv="content-type" content="text/html;charset=utf-8">
-    </head>
-    <body>
-        <div>{{id}}.{{name}}.{{star}}</div>
-        <div><pre>{{desc}}</pre></div>
-            <form action="/compile/{{id}}" method="POST">
-        	code:<br>
-            <textarea type="text" name="code" rows = 30 cols = 100>{{header}}</textarea> 
-        	<input type="submit" value="Submit">
-    	</form>
-    </body>
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>Home</title>
+    <style type="text/css">
+        body {background-color:aqua}
+	</style>
+    <style>
+		.left
+		{
+			float:left;
+			width:40%;
+			height:480px;
+			margin-left:50px;
+		}
+		.right
+		{
+			float:left;
+			width:40%;
+			border:1px soild #FOO;
+			height:480px;
+			margin-left:50px;
+		}
+	</style>
+</head>
+<body>
+    <p>欢迎进入蔡浩的OJ</p>
+	<div class="left">
+        <p></p>
+        <table class="table table-hover">
+            <p>题目描述</p>
+            <div>{{id}}.{{name}}.{{star}}</div>
+            <tr>
+                <p><pre>{{desc}}</pre></p>
+            </tr>
+        </table>
+	</div>
+	<div class="right">
+	<p>code：</p>
+        <form action="/compile/{{id}}" method="POST">
+		    <textarea  type="text" name="code" rows=40 cols=100 style="background-color:antiquewhite;color:blue">{{header}}</textarea>
+            <input type="submit" value="Submit">
+        </from>
+	</div>
+</body>
 </html>
+
