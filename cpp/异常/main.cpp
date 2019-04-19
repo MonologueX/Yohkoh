@@ -1,6 +1,7 @@
 #include <iostream>
 #include <setjmp.h>
 #include <malloc.h>
+#include <string>
 using namespace std;
 
 ///////////////////////////////////////////////
@@ -245,7 +246,7 @@ int main()
     return 0;
 }
 #endif 
-
+#if 0
 void TestFunc1()
 {
     throw 1;
@@ -286,3 +287,42 @@ int main()
     }
     return 0;
 }
+#endif 
+
+#if 0
+void TestFunc()throw(int)
+{
+    throw 1.0;
+}
+
+void TestFunc1()throw()
+{
+    return;
+}
+
+int main()
+{
+    TestFunc();
+    return 0;
+}
+#endif
+class Exception
+{
+    public:
+        Exception(int errId, const string& errInformation)throw()
+            :m_errId(errId)
+            ,m_errInformation(errInformation)
+    {}
+
+        virtual void What() = 0;
+    private:
+        int m_errId;
+        string m_errInformation;
+};
+
+class NetException
+{
+    public:
+    private:
+};
+
