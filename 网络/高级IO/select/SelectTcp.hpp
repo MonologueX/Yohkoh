@@ -1,6 +1,7 @@
 #pragma once 
 
 #include <iostream>
+#include <vector>
 #include <stdlib.h>
 #include <unistd.h>
 #include <sys/socket.h>
@@ -8,6 +9,8 @@
 #include <sys/select.h>
 #include <arpa/inet.h>
 #include <netinet/in.h>
+
+#define DEFAULT_FD -1
 
 using namespace std;
 
@@ -20,6 +23,8 @@ public:
 
     void ServerInit()
     {
+        m_cap = sizeof(fd_set)*8;
+        m_fd_array.resize(m_cap, DEFAULT_FD);
         m_listen_sock = socket(AF_INET, SOCK_STREAM, 0);
         if (m_listen_sock < 0)
         {
@@ -48,16 +53,14 @@ public:
 
     void Start()
     {
+        m_fd_array[0] = m_listen_sock;
+        m_size = 1;
         while (1)
         {
             fd_set rfds;
             FD_ZERO(&rfds);
-
-            FD_SET(m_listen_sock, &rfds);
-
-            int max_fd = m_listen_sock;
-            struct timeval timeout = {1, 0};
-
+            int max_fd = AddAllFd(m_fd_array, rfds);
+            struct timeval timeout = {20, 0};
             switch (select(max_fd+1, &rfds, nullptr, nullptr, &timeout))
             {
                 case -1:
@@ -68,6 +71,47 @@ public:
                     break;
                 default:
                     {
+                        for (auto i = 0; i < m_size; i++)
+                        {
+                            if (i == 0 && FD_ISSET(m_listen_sock, &rfds))
+                            {
+                                cout << "Get a new connect" << endl;
+                                struct sockaddr_in peer;
+                                socklen_t len = sizeof(peer);
+                                int sock = accept(m_listen_sock, (struct sockaddr*)&peer, &len);
+                                if (sock < 0)
+                                {
+                                    cerr << "accept error" << endl;
+                                    continue;
+                                    // TODO 
+                                }
+                                if (!AddFd(sock, m_fd_array))
+                                {
+                                    cout << "socket full" << endl;
+                                    close(sock);
+                                }
+                            }
+                            else if (FD_ISSET(m_fd_array[i], &rfds)) 
+                            {
+                                char buf[10240];
+                                ssize_t s = recv(m_fd_array[i], buf, sizeof(buf)-1, 0);
+                                if (s > 0)
+                                {
+                                    buf[s] = 0;
+                                    cout << buf << endl;
+                                }
+                                else if (0 == s)
+                                {
+                                    cout << "client quit" << endl;
+                                    close(m_fd_array[i]);
+                                    DelFd(i, m_fd_array);
+                                }
+                                else 
+                                {
+                                    cerr << "recv error" << endl;
+                                }
+                            }
+                        }
                     }
                     break;
             }
@@ -76,7 +120,46 @@ public:
 
     ~Server()
     {}
+
+private:
+    int AddAllFd(std::vector<int>fd_array, fd_set& rfds)
+    {
+        int max = fd_array[0];
+        for (auto i = 0; i < m_size; i++)
+        {
+            if (DEFAULT_FD == fd_array[i])
+            {
+                continue;
+            }
+            FD_SET(fd_array[i], &rfds);
+            if (max < fd_array[i])
+            {
+                max = fd_array[i];
+            }
+        }
+        return max;
+    }
+
+    bool AddFd(int fd, std::vector<int> fd_array)
+    {
+        if (m_size < m_cap)
+        {
+            fd_array[m_size++] = fd;
+            return true;
+        }
+        return false;
+    }
+
+    void DelFd(int index, std::vector<int> fd_array)
+    {
+        fd_array[index] = fd_array[--m_size];
+        fd_array[m_size] = DEFAULT_FD;
+    }
+
 private:
     int m_listen_sock;
     int m_port;
+    std::vector<int> m_fd_array;
+    int m_cap;
+    int m_size;
 };
