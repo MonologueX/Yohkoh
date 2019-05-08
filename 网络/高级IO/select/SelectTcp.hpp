@@ -67,13 +67,13 @@ public:
                     cerr << "select error" << endl;
                     break;
                 case 0:
-                    cout << "tmeout" << endl;
+                    cout << "time out" << endl;
                     break;
                 default:
                     {
                         for (auto i = 0; i < m_size; i++)
                         {
-                            if (i == 0 && FD_ISSET(m_listen_sock, &rfds))
+                            if ((i == 0) && FD_ISSET(m_fd_array[i], &rfds))
                             {
                                 cout << "Get a new connect" << endl;
                                 struct sockaddr_in peer;
@@ -85,13 +85,16 @@ public:
                                     continue;
                                     // TODO 
                                 }
+
+                                cout << "get a new client, fd is: " << sock << endl;
+
                                 if (!AddFd(sock, m_fd_array))
                                 {
                                     cout << "socket full" << endl;
                                     close(sock);
                                 }
                             }
-                            else if (FD_ISSET(m_fd_array[i], &rfds)) 
+                            else if (FD_ISSET(m_fd_array[i], &rfds))
                             {
                                 char buf[10240];
                                 ssize_t s = recv(m_fd_array[i], buf, sizeof(buf)-1, 0);
@@ -142,9 +145,11 @@ private:
 
     bool AddFd(int fd, std::vector<int> fd_array)
     {
+        cout << "add fd: " << fd << endl;
         if (m_size < m_cap)
         {
             fd_array[m_size++] = fd;
+            cout << "size: " << m_size << "cap: " << m_cap << endl;
             return true;
         }
         return false;
@@ -152,8 +157,10 @@ private:
 
     void DelFd(int index, std::vector<int> fd_array)
     {
+        cout << "delete fd : " << fd_array[index] << endl;
         fd_array[index] = fd_array[--m_size];
         fd_array[m_size] = DEFAULT_FD;
+        cout << "size: " << m_size << "cap: " << m_cap << endl;
     }
 
 private:
