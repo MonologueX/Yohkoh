@@ -223,7 +223,7 @@ int Step(std::string& ip, int& port, uint32_t& room_id, uint32_t& id, int& x, in
 }
 
 // 判断
-char Judge(std::string& ip, int& port, uint32_t& room_id, uint32_t& id)
+char Judge(std::string& ip, int& port, uint32_t& room_id)
 {
     try 
     {
@@ -234,7 +234,7 @@ char Judge(std::string& ip, int& port, uint32_t& room_id, uint32_t& id)
             std::cout << "connect timeout" << std::endl;
             return 3;
         }
-        return client.call<char>("RpcJudge", room_id, id);
+        return client.call<char>("RpcJudge", room_id);
     }
     catch (const std::exception& e)
     {
@@ -249,10 +249,13 @@ char Judge(std::string& ip, int& port, uint32_t& room_id, uint32_t& id)
 bool Match(std::string& ip, int& port, uint32_t& id)
 {
     PushMatchPool(ip, port, id);
-    while (1)
+    int i = 0;
+    char bar[101];
+    const char *lable = "|/-\\";
+
+    for (i = 0; i <= 100; i++)
     {
         int result = CheckReady(ip, port, id);
-        std::cout << "check:" << result << std::endl;
         if (result == 3)
         {
             return true;
@@ -263,9 +266,20 @@ bool Match(std::string& ip, int& port, uint32_t& id)
         }
         else 
         {
-            sleep(1);
+            bar[i] = '\0';
+            if (i < 40)
+                printf("\033[1;31;44m%s\033[0m [%d%%][%c]\r", bar, i, lable[i % 4]);
+            else if (i < 80)
+                printf("\033[1;31;43m%s\033[0m [%d%%][%c]\r", bar, i, lable[i % 4]);
+            else
+                printf("\033[1;31;41m%s\033[0m [%d%%][%c]\r", bar, i, lable[i % 4]);
+            fflush(stdout);
+            bar[i] = ' ';
+            usleep(100000);
         }
     }
+    std::cout << std::endl;
+    return false;
 }
 
 // 打印棋盘
@@ -321,27 +335,29 @@ void PlayGame(std::string& ip, int& port, uint32_t& id)
         system("clear");
         GetBoard(ip, port, room_id, board);
         ShowBoard(board);
-        if (result = Judge(ip, port ,room_id, id) != 'N')
+        if (result = Judge(ip, port ,room_id) != 'N')
         {
             break;
         }
         if (!IsMyTurn(ip, port, room_id, id))
         {
+            std::cout << "对方正在思考，请稍等!";
             sleep(1);
             continue;
         }
         std::cout << "请输入你落子位置:";
         std::cin >> x >> y;
+        system("clear");
         if (x >= 1 && x <= 15 && y >= 1 && y <= 15)
         {
             if (!PostIsRight(board, x, y))
             {
-                std::cout << "该位置已经被占用，请重新输入" <<std::endl;
+                std::cout << "该位置已经被占用，请重新输入>" <<std::endl;
             }
             else 
             {
                 Step(ip, port, room_id, id, x, y);
-                result = Judge(ip, port, room_id, id);
+                result = Judge(ip, port, room_id);
                 if (result != 'N')
                 {
                     break;
@@ -350,9 +366,12 @@ void PlayGame(std::string& ip, int& port, uint32_t& id)
         }
         else 
         {
-            std::cout << "你输入的位置有误，请重新输入" << std::endl;
+            std::cout << "你输入的位置有误，请重新输入>" << std::endl;
         }
     }
+    system("clear");
+    GetBoard(ip, port, room_id, board);
+    ShowBoard(board);
     if (result == 'E')
     {
         std::cout << "平局" << std::endl;
@@ -373,13 +392,14 @@ void Game(std::string& ip, int& port, uint32_t& id)
     volatile bool quit = false;
     while (!quit)
     {
-        std::cout << "####################################" << std::endl;
-        std::cout << "##          1. 匹配               ##" << std::endl;
-        std::cout << "##          2. 单机               ##" << std::endl;
-        std::cout << "##          0. 退出               ##" << std::endl;
-        std::cout << "####################################" << std::endl;
-        std::cout << "请选择：";
+        printf("==============欢迎进入五子棋小游戏==============\n");
+        printf("\t=======请选择功能列表=======\n");
+        printf("\t\t1.开始匹配\n");
+        printf("\t\t2.单机游戏\n");
+        printf("\t\t0.退出游戏\n");
+        printf("请选择>");
         std::cin >> select;
+        system("clear");
         switch (select)
         {
             case 1:
@@ -390,9 +410,9 @@ void Game(std::string& ip, int& port, uint32_t& id)
                     }
                     else 
                     {
-                        //std::cout << "匹配失败，请重新再试！" << std::endl;
+                        //std::cout << "匹配失败！" << std::endl;
                         ConsoleGame g;
-                        g.Play();
+                        g.Game();
                     }
                 }
                 break;

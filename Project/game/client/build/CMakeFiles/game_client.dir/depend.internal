@@ -528,6 +528,6 @@ CMakeFiles/game_client.dir/main.cpp.o
  ../../../third/msgpack/include/msgpack/zone.h
  ../../../third/msgpack/include/msgpack/zone.hpp
  ../../../third/msgpack/include/msgpack/zone_decl.hpp
- /home/ch/workspace/game/Project/game/client/console_game.hpp
- /home/ch/workspace/game/Project/game/client/game.hpp
- /home/ch/workspace/game/Project/game/client/main.cpp
+ /home/ch/workspace/Yohkoh/Project/game/client/console_game.hpp
+ /home/ch/workspace/Yohkoh/Project/game/client/game.hpp
+ /home/ch/workspace/Yohkoh/Project/game/client/main.cpp

@@ -60,7 +60,7 @@ public:
         }
     }
 
-    char GameResult(uint32_t& id)
+    char GameResult()
     {
         return m_result;
     }

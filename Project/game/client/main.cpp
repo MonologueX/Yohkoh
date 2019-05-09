@@ -3,6 +3,7 @@
 
 static void Usage(std::string proc)
 {
+    system("clear");
     std::cout << "Usage" << proc << "ip port" << std::endl;
     std::cout << "无法连接到服务器，将进行人机版五子棋" << std::endl;
     ConsoleGame g;
@@ -11,11 +12,13 @@ static void Usage(std::string proc)
 
 static void LoginMenu()
 {
-    std::cout << "=============== 五子棋 ===============" << std::endl;
-    std::cout << "=== 1. 登录" << std::endl;
-    std::cout << "=== 2. 注册" << std::endl;
-    std::cout << "=== 3. 退出" << std::endl;
-    std::cout << "请选择>";
+    printf("==============欢迎进入五子棋小游戏==============\n");
+    printf("\t=======请选择功能列表=======\n");
+    printf("\t\t1.单机游戏\n");
+    printf("\t\t2.登录\n");
+    printf("\t\t3.注册\n");
+    printf("\t\t0.退出\n");
+    printf("请选择>");
 }
 
 int main(int argc, char* argv[])
@@ -39,6 +42,13 @@ int main(int argc, char* argv[])
         {
             case 1:
                 {
+                    ConsoleGame g;
+                    g.Game();
+                }
+                break;
+            case 2:
+                {
+                    system("clear");
                     uint32_t result = Login(ip, port);
                     if (result >= 10000)
                     {
@@ -52,15 +62,17 @@ int main(int argc, char* argv[])
                     }
                 }
                 break;
-            case 2:
+            case 3:
                 Register(ip, port, name, password, id);
+                system("clear");
                 std::cout << "注册成功,请记住你的注册id:["<< id << "]" <<std::endl;
                 std::cout << "请直接进行登录！" << std::endl;
                 break;
-            case 3:
+            case 0:
                 std::cout << "client Quit!" << std::endl;
                 exit(2);
             default:
+                system("clear");
                 std::cout << "Enter Error! Try Again" << std::endl;
                 break; 
         }

@@ -203,9 +203,9 @@ public:
     {
         return m_rm.Step(room_id, id, x, y);
     }
-    char Judge(uint32_t& room_id, uint32_t& id)
+    char Judge(uint32_t& room_id)
     {
-        return m_rm.Judge(room_id, id);
+        return m_rm.Judge(room_id);
     }
 
     ~Hall()

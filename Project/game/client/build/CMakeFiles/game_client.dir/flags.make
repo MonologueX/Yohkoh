@@ -6,5 +6,5 @@ CXX_FLAGS =  -pthread -std=c++17
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/ch/workspace/game/Project/game/client/../../include -I/home/ch/workspace/game/Project/game/client/../../third/msgpack/include 
+CXX_INCLUDES = -I/home/ch/workspace/Yohkoh/Project/game/client/../../include -I/home/ch/workspace/Yohkoh/Project/game/client/../../third/msgpack/include 
 

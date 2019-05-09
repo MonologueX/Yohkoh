@@ -5,8 +5,6 @@
 #include <string>
 #include <time.h>
 
-#define TIMEOUT 20
-
 typedef enum
 {
     OFFLINE = 0,

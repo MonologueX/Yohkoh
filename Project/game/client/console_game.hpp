@@ -33,7 +33,6 @@ public:
             }
         }
     }
-private:
     void Game()
     {
         while (1)
@@ -55,13 +54,14 @@ private:
         }
     }
 
+private:
     void Menu()
     {
-        std::cout << "=====================================" << std::endl;
-        std::cout << "=========== 1. 开始游戏 =============" << std::endl;
-        std::cout << "=========== 0. 退出游戏 =============" << std::endl;
-        std::cout << "=====================================" << std::endl;
-        std::cout << "请选择:";
+        printf("==============欢迎进入五子棋小游戏==============\n");
+        printf("\t=======请选择功能列表=======\n");
+        printf("\t\t1.开始游戏\n");
+        printf("\t\t0.退出游戏\n");
+        printf("请选择>");
     }
 
     void Print()

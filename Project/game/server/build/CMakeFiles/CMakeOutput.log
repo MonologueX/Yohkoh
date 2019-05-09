@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/ch/workspace/game/Project/game/server/build/CMakeFiles/3.9.2/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/ch/workspace/Yohkoh/Project/game/server/build/CMakeFiles/3.9.2/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /opt/rh/devtoolset-7/root/usr/bin/c++ 
@@ -23,33 +23,33 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/ch/workspace/game/Project/game/server/build/CMakeFiles/3.9.2/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/ch/workspace/Yohkoh/Project/game/server/build/CMakeFiles/3.9.2/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/ch/workspace/game/Project/game/server/build/CMakeFiles/CMakeTmp
+Change Dir: /home/ch/workspace/Yohkoh/Project/game/server/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/opt/rh/devtoolset-7/root/usr/bin/gmake" "cmTC_443a1/fast"
-/opt/rh/devtoolset-7/root/usr/bin/gmake -f CMakeFiles/cmTC_443a1.dir/build.make CMakeFiles/cmTC_443a1.dir/build
-gmake[1]: Entering directory '/home/ch/workspace/game/Project/game/server/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_443a1.dir/testCCompiler.c.o
-/opt/rh/devtoolset-7/root/usr/bin/cc    -o CMakeFiles/cmTC_443a1.dir/testCCompiler.c.o   -c /home/ch/workspace/game/Project/game/server/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_443a1
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_443a1.dir/link.txt --verbose=1
-/opt/rh/devtoolset-7/root/usr/bin/cc      CMakeFiles/cmTC_443a1.dir/testCCompiler.c.o  -o cmTC_443a1 
-gmake[1]: Leaving directory '/home/ch/workspace/game/Project/game/server/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/opt/rh/devtoolset-7/root/usr/bin/gmake" "cmTC_5861e/fast"
+/opt/rh/devtoolset-7/root/usr/bin/gmake -f CMakeFiles/cmTC_5861e.dir/build.make CMakeFiles/cmTC_5861e.dir/build
+gmake[1]: Entering directory '/home/ch/workspace/Yohkoh/Project/game/server/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5861e.dir/testCCompiler.c.o
+/opt/rh/devtoolset-7/root/usr/bin/cc    -o CMakeFiles/cmTC_5861e.dir/testCCompiler.c.o   -c /home/ch/workspace/Yohkoh/Project/game/server/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_5861e
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5861e.dir/link.txt --verbose=1
+/opt/rh/devtoolset-7/root/usr/bin/cc      CMakeFiles/cmTC_5861e.dir/testCCompiler.c.o  -o cmTC_5861e 
+gmake[1]: Leaving directory '/home/ch/workspace/Yohkoh/Project/game/server/build/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/ch/workspace/game/Project/game/server/build/CMakeFiles/CMakeTmp
+Change Dir: /home/ch/workspace/Yohkoh/Project/game/server/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/opt/rh/devtoolset-7/root/usr/bin/gmake" "cmTC_3f646/fast"
-/opt/rh/devtoolset-7/root/usr/bin/gmake -f CMakeFiles/cmTC_3f646.dir/build.make CMakeFiles/cmTC_3f646.dir/build
-gmake[1]: Entering directory '/home/ch/workspace/game/Project/game/server/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_3f646.dir/CMakeCCompilerABI.c.o
-/opt/rh/devtoolset-7/root/usr/bin/cc    -o CMakeFiles/cmTC_3f646.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.9/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_3f646
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3f646.dir/link.txt --verbose=1
-/opt/rh/devtoolset-7/root/usr/bin/cc     -v CMakeFiles/cmTC_3f646.dir/CMakeCCompilerABI.c.o  -o cmTC_3f646 
+Run Build Command:"/opt/rh/devtoolset-7/root/usr/bin/gmake" "cmTC_c1020/fast"
+/opt/rh/devtoolset-7/root/usr/bin/gmake -f CMakeFiles/cmTC_c1020.dir/build.make CMakeFiles/cmTC_c1020.dir/build
+gmake[1]: Entering directory '/home/ch/workspace/Yohkoh/Project/game/server/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c1020.dir/CMakeCCompilerABI.c.o
+/opt/rh/devtoolset-7/root/usr/bin/cc    -o CMakeFiles/cmTC_c1020.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.9/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_c1020
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c1020.dir/link.txt --verbose=1
+/opt/rh/devtoolset-7/root/usr/bin/cc     -v CMakeFiles/cmTC_c1020.dir/CMakeCCompilerABI.c.o  -o cmTC_c1020 
 Using built-in specs.
 COLLECT_GCC=/opt/rh/devtoolset-7/root/usr/bin/cc
 COLLECT_LTO_WRAPPER=/opt/rh/devtoolset-7/root/usr/libexec/gcc/x86_64-redhat-linux/7/lto-wrapper
@@ -59,24 +59,24 @@ Thread model: posix
 gcc version 7.3.1 20180303 (Red Hat 7.3.1-5) (GCC) 
 COMPILER_PATH=/opt/rh/devtoolset-7/root/usr/libexec/gcc/x86_64-redhat-linux/7/:/opt/rh/devtoolset-7/root/usr/libexec/gcc/x86_64-redhat-linux/7/:/opt/rh/devtoolset-7/root/usr/libexec/gcc/x86_64-redhat-linux/:/opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/:/opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/
 LIBRARY_PATH=/opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/:/opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3f646' '-mtune=generic' '-march=x86-64'
- /opt/rh/devtoolset-7/root/usr/libexec/gcc/x86_64-redhat-linux/7/collect2 -plugin /opt/rh/devtoolset-7/root/usr/libexec/gcc/x86_64-redhat-linux/7/liblto_plugin.so -plugin-opt=/opt/rh/devtoolset-7/root/usr/libexec/gcc/x86_64-redhat-linux/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccIVGJBw.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_3f646 /lib/../lib64/crt1.o /lib/../lib64/crti.o /opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/crtbegin.o -L/opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7 -L/opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/../../.. CMakeFiles/cmTC_3f646.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/crtend.o /lib/../lib64/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3f646' '-mtune=generic' '-march=x86-64'
-gmake[1]: Leaving directory '/home/ch/workspace/game/Project/game/server/build/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c1020' '-mtune=generic' '-march=x86-64'
+ /opt/rh/devtoolset-7/root/usr/libexec/gcc/x86_64-redhat-linux/7/collect2 -plugin /opt/rh/devtoolset-7/root/usr/libexec/gcc/x86_64-redhat-linux/7/liblto_plugin.so -plugin-opt=/opt/rh/devtoolset-7/root/usr/libexec/gcc/x86_64-redhat-linux/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cctdrXrF.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_c1020 /lib/../lib64/crt1.o /lib/../lib64/crti.o /opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/crtbegin.o -L/opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7 -L/opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/../../.. CMakeFiles/cmTC_c1020.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/crtend.o /lib/../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c1020' '-mtune=generic' '-march=x86-64'
+gmake[1]: Leaving directory '/home/ch/workspace/Yohkoh/Project/game/server/build/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/ch/workspace/game/Project/game/server/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/ch/workspace/Yohkoh/Project/game/server/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/opt/rh/devtoolset-7/root/usr/bin/gmake" "cmTC_3f646/fast"]
-  ignore line: [/opt/rh/devtoolset-7/root/usr/bin/gmake -f CMakeFiles/cmTC_3f646.dir/build.make CMakeFiles/cmTC_3f646.dir/build]
-  ignore line: [gmake[1]: Entering directory '/home/ch/workspace/game/Project/game/server/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_3f646.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/opt/rh/devtoolset-7/root/usr/bin/cc    -o CMakeFiles/cmTC_3f646.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.9/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_3f646]
-  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3f646.dir/link.txt --verbose=1]
-  ignore line: [/opt/rh/devtoolset-7/root/usr/bin/cc     -v CMakeFiles/cmTC_3f646.dir/CMakeCCompilerABI.c.o  -o cmTC_3f646 ]
+  ignore line: [Run Build Command:"/opt/rh/devtoolset-7/root/usr/bin/gmake" "cmTC_c1020/fast"]
+  ignore line: [/opt/rh/devtoolset-7/root/usr/bin/gmake -f CMakeFiles/cmTC_c1020.dir/build.make CMakeFiles/cmTC_c1020.dir/build]
+  ignore line: [gmake[1]: Entering directory '/home/ch/workspace/Yohkoh/Project/game/server/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_c1020.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/opt/rh/devtoolset-7/root/usr/bin/cc    -o CMakeFiles/cmTC_c1020.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.9/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_c1020]
+  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c1020.dir/link.txt --verbose=1]
+  ignore line: [/opt/rh/devtoolset-7/root/usr/bin/cc     -v CMakeFiles/cmTC_c1020.dir/CMakeCCompilerABI.c.o  -o cmTC_c1020 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/opt/rh/devtoolset-7/root/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/opt/rh/devtoolset-7/root/usr/libexec/gcc/x86_64-redhat-linux/7/lto-wrapper]
@@ -86,13 +86,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 7.3.1 20180303 (Red Hat 7.3.1-5) (GCC) ]
   ignore line: [COMPILER_PATH=/opt/rh/devtoolset-7/root/usr/libexec/gcc/x86_64-redhat-linux/7/:/opt/rh/devtoolset-7/root/usr/libexec/gcc/x86_64-redhat-linux/7/:/opt/rh/devtoolset-7/root/usr/libexec/gcc/x86_64-redhat-linux/:/opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/:/opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/]
   ignore line: [LIBRARY_PATH=/opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/:/opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3f646' '-mtune=generic' '-march=x86-64']
-  link line: [ /opt/rh/devtoolset-7/root/usr/libexec/gcc/x86_64-redhat-linux/7/collect2 -plugin /opt/rh/devtoolset-7/root/usr/libexec/gcc/x86_64-redhat-linux/7/liblto_plugin.so -plugin-opt=/opt/rh/devtoolset-7/root/usr/libexec/gcc/x86_64-redhat-linux/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccIVGJBw.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_3f646 /lib/../lib64/crt1.o /lib/../lib64/crti.o /opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/crtbegin.o -L/opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7 -L/opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/../../.. CMakeFiles/cmTC_3f646.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/crtend.o /lib/../lib64/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c1020' '-mtune=generic' '-march=x86-64']
+  link line: [ /opt/rh/devtoolset-7/root/usr/libexec/gcc/x86_64-redhat-linux/7/collect2 -plugin /opt/rh/devtoolset-7/root/usr/libexec/gcc/x86_64-redhat-linux/7/liblto_plugin.so -plugin-opt=/opt/rh/devtoolset-7/root/usr/libexec/gcc/x86_64-redhat-linux/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cctdrXrF.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_c1020 /lib/../lib64/crt1.o /lib/../lib64/crti.o /opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/crtbegin.o -L/opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7 -L/opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/../../.. CMakeFiles/cmTC_c1020.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/crtend.o /lib/../lib64/crtn.o]
     arg [/opt/rh/devtoolset-7/root/usr/libexec/gcc/x86_64-redhat-linux/7/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/opt/rh/devtoolset-7/root/usr/libexec/gcc/x86_64-redhat-linux/7/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/opt/rh/devtoolset-7/root/usr/libexec/gcc/x86_64-redhat-linux/7/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccIVGJBw.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cctdrXrF.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -107,7 +107,7 @@ Parsed C implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_3f646] ==> ignore
+    arg [cmTC_c1020] ==> ignore
     arg [/lib/../lib64/crt1.o] ==> ignore
     arg [/lib/../lib64/crti.o] ==> ignore
     arg [/opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/crtbegin.o] ==> ignore
@@ -116,7 +116,7 @@ Parsed C implicit link information from above output:
     arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
     arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
     arg [-L/opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/../../..] ==> dir [/opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/../../..]
-    arg [CMakeFiles/cmTC_3f646.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_c1020.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -141,17 +141,17 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/ch/workspace/game/Project/game/server/build/CMakeFiles/CMakeTmp
+Change Dir: /home/ch/workspace/Yohkoh/Project/game/server/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/opt/rh/devtoolset-7/root/usr/bin/gmake" "cmTC_d3123/fast"
-/opt/rh/devtoolset-7/root/usr/bin/gmake -f CMakeFiles/cmTC_d3123.dir/build.make CMakeFiles/cmTC_d3123.dir/build
-gmake[1]: Entering directory '/home/ch/workspace/game/Project/game/server/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_d3123.dir/feature_tests.c.o
-/opt/rh/devtoolset-7/root/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_d3123.dir/feature_tests.c.o   -c /home/ch/workspace/game/Project/game/server/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_d3123
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d3123.dir/link.txt --verbose=1
-/opt/rh/devtoolset-7/root/usr/bin/cc      CMakeFiles/cmTC_d3123.dir/feature_tests.c.o  -o cmTC_d3123 
-gmake[1]: Leaving directory '/home/ch/workspace/game/Project/game/server/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/opt/rh/devtoolset-7/root/usr/bin/gmake" "cmTC_3aa9a/fast"
+/opt/rh/devtoolset-7/root/usr/bin/gmake -f CMakeFiles/cmTC_3aa9a.dir/build.make CMakeFiles/cmTC_3aa9a.dir/build
+gmake[1]: Entering directory '/home/ch/workspace/Yohkoh/Project/game/server/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3aa9a.dir/feature_tests.c.o
+/opt/rh/devtoolset-7/root/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_3aa9a.dir/feature_tests.c.o   -c /home/ch/workspace/Yohkoh/Project/game/server/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_3aa9a
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3aa9a.dir/link.txt --verbose=1
+/opt/rh/devtoolset-7/root/usr/bin/cc      CMakeFiles/cmTC_3aa9a.dir/feature_tests.c.o  -o cmTC_3aa9a 
+gmake[1]: Leaving directory '/home/ch/workspace/Yohkoh/Project/game/server/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -161,17 +161,17 @@ gmake[1]: Leaving directory '/home/ch/workspace/game/Project/game/server/build/C
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/ch/workspace/game/Project/game/server/build/CMakeFiles/CMakeTmp
+Change Dir: /home/ch/workspace/Yohkoh/Project/game/server/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/opt/rh/devtoolset-7/root/usr/bin/gmake" "cmTC_68426/fast"
-/opt/rh/devtoolset-7/root/usr/bin/gmake -f CMakeFiles/cmTC_68426.dir/build.make CMakeFiles/cmTC_68426.dir/build
-gmake[1]: Entering directory '/home/ch/workspace/game/Project/game/server/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_68426.dir/feature_tests.c.o
-/opt/rh/devtoolset-7/root/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_68426.dir/feature_tests.c.o   -c /home/ch/workspace/game/Project/game/server/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_68426
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_68426.dir/link.txt --verbose=1
-/opt/rh/devtoolset-7/root/usr/bin/cc      CMakeFiles/cmTC_68426.dir/feature_tests.c.o  -o cmTC_68426 
-gmake[1]: Leaving directory '/home/ch/workspace/game/Project/game/server/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/opt/rh/devtoolset-7/root/usr/bin/gmake" "cmTC_48663/fast"
+/opt/rh/devtoolset-7/root/usr/bin/gmake -f CMakeFiles/cmTC_48663.dir/build.make CMakeFiles/cmTC_48663.dir/build
+gmake[1]: Entering directory '/home/ch/workspace/Yohkoh/Project/game/server/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_48663.dir/feature_tests.c.o
+/opt/rh/devtoolset-7/root/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_48663.dir/feature_tests.c.o   -c /home/ch/workspace/Yohkoh/Project/game/server/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_48663
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_48663.dir/link.txt --verbose=1
+/opt/rh/devtoolset-7/root/usr/bin/cc      CMakeFiles/cmTC_48663.dir/feature_tests.c.o  -o cmTC_48663 
+gmake[1]: Leaving directory '/home/ch/workspace/Yohkoh/Project/game/server/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -181,17 +181,17 @@ gmake[1]: Leaving directory '/home/ch/workspace/game/Project/game/server/build/C
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/ch/workspace/game/Project/game/server/build/CMakeFiles/CMakeTmp
+Change Dir: /home/ch/workspace/Yohkoh/Project/game/server/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/opt/rh/devtoolset-7/root/usr/bin/gmake" "cmTC_6cb8b/fast"
-/opt/rh/devtoolset-7/root/usr/bin/gmake -f CMakeFiles/cmTC_6cb8b.dir/build.make CMakeFiles/cmTC_6cb8b.dir/build
-gmake[1]: Entering directory '/home/ch/workspace/game/Project/game/server/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_6cb8b.dir/feature_tests.c.o
-/opt/rh/devtoolset-7/root/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_6cb8b.dir/feature_tests.c.o   -c /home/ch/workspace/game/Project/game/server/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_6cb8b
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6cb8b.dir/link.txt --verbose=1
-/opt/rh/devtoolset-7/root/usr/bin/cc      CMakeFiles/cmTC_6cb8b.dir/feature_tests.c.o  -o cmTC_6cb8b 
-gmake[1]: Leaving directory '/home/ch/workspace/game/Project/game/server/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/opt/rh/devtoolset-7/root/usr/bin/gmake" "cmTC_81fb1/fast"
+/opt/rh/devtoolset-7/root/usr/bin/gmake -f CMakeFiles/cmTC_81fb1.dir/build.make CMakeFiles/cmTC_81fb1.dir/build
+gmake[1]: Entering directory '/home/ch/workspace/Yohkoh/Project/game/server/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_81fb1.dir/feature_tests.c.o
+/opt/rh/devtoolset-7/root/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_81fb1.dir/feature_tests.c.o   -c /home/ch/workspace/Yohkoh/Project/game/server/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_81fb1
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_81fb1.dir/link.txt --verbose=1
+/opt/rh/devtoolset-7/root/usr/bin/cc      CMakeFiles/cmTC_81fb1.dir/feature_tests.c.o  -o cmTC_81fb1 
+gmake[1]: Leaving directory '/home/ch/workspace/Yohkoh/Project/game/server/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -199,30 +199,30 @@ gmake[1]: Leaving directory '/home/ch/workspace/game/Project/game/server/build/C
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/ch/workspace/game/Project/game/server/build/CMakeFiles/CMakeTmp
+Change Dir: /home/ch/workspace/Yohkoh/Project/game/server/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/opt/rh/devtoolset-7/root/usr/bin/gmake" "cmTC_bd965/fast"
-/opt/rh/devtoolset-7/root/usr/bin/gmake -f CMakeFiles/cmTC_bd965.dir/build.make CMakeFiles/cmTC_bd965.dir/build
-gmake[1]: Entering directory '/home/ch/workspace/game/Project/game/server/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_bd965.dir/testCXXCompiler.cxx.o
-/opt/rh/devtoolset-7/root/usr/bin/c++     -o CMakeFiles/cmTC_bd965.dir/testCXXCompiler.cxx.o -c /home/ch/workspace/game/Project/game/server/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_bd965
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bd965.dir/link.txt --verbose=1
-/opt/rh/devtoolset-7/root/usr/bin/c++       CMakeFiles/cmTC_bd965.dir/testCXXCompiler.cxx.o  -o cmTC_bd965 
-gmake[1]: Leaving directory '/home/ch/workspace/game/Project/game/server/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/opt/rh/devtoolset-7/root/usr/bin/gmake" "cmTC_86896/fast"
+/opt/rh/devtoolset-7/root/usr/bin/gmake -f CMakeFiles/cmTC_86896.dir/build.make CMakeFiles/cmTC_86896.dir/build
+gmake[1]: Entering directory '/home/ch/workspace/Yohkoh/Project/game/server/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_86896.dir/testCXXCompiler.cxx.o
+/opt/rh/devtoolset-7/root/usr/bin/c++     -o CMakeFiles/cmTC_86896.dir/testCXXCompiler.cxx.o -c /home/ch/workspace/Yohkoh/Project/game/server/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_86896
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_86896.dir/link.txt --verbose=1
+/opt/rh/devtoolset-7/root/usr/bin/c++       CMakeFiles/cmTC_86896.dir/testCXXCompiler.cxx.o  -o cmTC_86896 
+gmake[1]: Leaving directory '/home/ch/workspace/Yohkoh/Project/game/server/build/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/ch/workspace/game/Project/game/server/build/CMakeFiles/CMakeTmp
+Change Dir: /home/ch/workspace/Yohkoh/Project/game/server/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/opt/rh/devtoolset-7/root/usr/bin/gmake" "cmTC_b58e0/fast"
-/opt/rh/devtoolset-7/root/usr/bin/gmake -f CMakeFiles/cmTC_b58e0.dir/build.make CMakeFiles/cmTC_b58e0.dir/build
-gmake[1]: Entering directory '/home/ch/workspace/game/Project/game/server/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_b58e0.dir/CMakeCXXCompilerABI.cpp.o
-/opt/rh/devtoolset-7/root/usr/bin/c++     -o CMakeFiles/cmTC_b58e0.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.9/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_b58e0
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b58e0.dir/link.txt --verbose=1
-/opt/rh/devtoolset-7/root/usr/bin/c++      -v CMakeFiles/cmTC_b58e0.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_b58e0 
+Run Build Command:"/opt/rh/devtoolset-7/root/usr/bin/gmake" "cmTC_13770/fast"
+/opt/rh/devtoolset-7/root/usr/bin/gmake -f CMakeFiles/cmTC_13770.dir/build.make CMakeFiles/cmTC_13770.dir/build
+gmake[1]: Entering directory '/home/ch/workspace/Yohkoh/Project/game/server/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_13770.dir/CMakeCXXCompilerABI.cpp.o
+/opt/rh/devtoolset-7/root/usr/bin/c++     -o CMakeFiles/cmTC_13770.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.9/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_13770
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_13770.dir/link.txt --verbose=1
+/opt/rh/devtoolset-7/root/usr/bin/c++      -v CMakeFiles/cmTC_13770.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_13770 
 Using built-in specs.
 COLLECT_GCC=/opt/rh/devtoolset-7/root/usr/bin/c++
 COLLECT_LTO_WRAPPER=/opt/rh/devtoolset-7/root/usr/libexec/gcc/x86_64-redhat-linux/7/lto-wrapper
@@ -232,24 +232,24 @@ Thread model: posix
 gcc version 7.3.1 20180303 (Red Hat 7.3.1-5) (GCC) 
 COMPILER_PATH=/opt/rh/devtoolset-7/root/usr/libexec/gcc/x86_64-redhat-linux/7/:/opt/rh/devtoolset-7/root/usr/libexec/gcc/x86_64-redhat-linux/7/:/opt/rh/devtoolset-7/root/usr/libexec/gcc/x86_64-redhat-linux/:/opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/:/opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/
 LIBRARY_PATH=/opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/:/opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b58e0' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /opt/rh/devtoolset-7/root/usr/libexec/gcc/x86_64-redhat-linux/7/collect2 -plugin /opt/rh/devtoolset-7/root/usr/libexec/gcc/x86_64-redhat-linux/7/liblto_plugin.so -plugin-opt=/opt/rh/devtoolset-7/root/usr/libexec/gcc/x86_64-redhat-linux/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cc5PUWu4.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_b58e0 /lib/../lib64/crt1.o /lib/../lib64/crti.o /opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/crtbegin.o -L/opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7 -L/opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/../../.. CMakeFiles/cmTC_b58e0.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/crtend.o /lib/../lib64/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b58e0' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-gmake[1]: Leaving directory '/home/ch/workspace/game/Project/game/server/build/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_13770' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /opt/rh/devtoolset-7/root/usr/libexec/gcc/x86_64-redhat-linux/7/collect2 -plugin /opt/rh/devtoolset-7/root/usr/libexec/gcc/x86_64-redhat-linux/7/liblto_plugin.so -plugin-opt=/opt/rh/devtoolset-7/root/usr/libexec/gcc/x86_64-redhat-linux/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccT27vW0.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_13770 /lib/../lib64/crt1.o /lib/../lib64/crti.o /opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/crtbegin.o -L/opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7 -L/opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/../../.. CMakeFiles/cmTC_13770.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/crtend.o /lib/../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_13770' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+gmake[1]: Leaving directory '/home/ch/workspace/Yohkoh/Project/game/server/build/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/ch/workspace/game/Project/game/server/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/ch/workspace/Yohkoh/Project/game/server/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/opt/rh/devtoolset-7/root/usr/bin/gmake" "cmTC_b58e0/fast"]
-  ignore line: [/opt/rh/devtoolset-7/root/usr/bin/gmake -f CMakeFiles/cmTC_b58e0.dir/build.make CMakeFiles/cmTC_b58e0.dir/build]
-  ignore line: [gmake[1]: Entering directory '/home/ch/workspace/game/Project/game/server/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_b58e0.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/opt/rh/devtoolset-7/root/usr/bin/c++     -o CMakeFiles/cmTC_b58e0.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.9/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_b58e0]
-  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b58e0.dir/link.txt --verbose=1]
-  ignore line: [/opt/rh/devtoolset-7/root/usr/bin/c++      -v CMakeFiles/cmTC_b58e0.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_b58e0 ]
+  ignore line: [Run Build Command:"/opt/rh/devtoolset-7/root/usr/bin/gmake" "cmTC_13770/fast"]
+  ignore line: [/opt/rh/devtoolset-7/root/usr/bin/gmake -f CMakeFiles/cmTC_13770.dir/build.make CMakeFiles/cmTC_13770.dir/build]
+  ignore line: [gmake[1]: Entering directory '/home/ch/workspace/Yohkoh/Project/game/server/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_13770.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/opt/rh/devtoolset-7/root/usr/bin/c++     -o CMakeFiles/cmTC_13770.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.9/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_13770]
+  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_13770.dir/link.txt --verbose=1]
+  ignore line: [/opt/rh/devtoolset-7/root/usr/bin/c++      -v CMakeFiles/cmTC_13770.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_13770 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/opt/rh/devtoolset-7/root/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/opt/rh/devtoolset-7/root/usr/libexec/gcc/x86_64-redhat-linux/7/lto-wrapper]
@@ -259,13 +259,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 7.3.1 20180303 (Red Hat 7.3.1-5) (GCC) ]
   ignore line: [COMPILER_PATH=/opt/rh/devtoolset-7/root/usr/libexec/gcc/x86_64-redhat-linux/7/:/opt/rh/devtoolset-7/root/usr/libexec/gcc/x86_64-redhat-linux/7/:/opt/rh/devtoolset-7/root/usr/libexec/gcc/x86_64-redhat-linux/:/opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/:/opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/]
   ignore line: [LIBRARY_PATH=/opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/:/opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b58e0' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /opt/rh/devtoolset-7/root/usr/libexec/gcc/x86_64-redhat-linux/7/collect2 -plugin /opt/rh/devtoolset-7/root/usr/libexec/gcc/x86_64-redhat-linux/7/liblto_plugin.so -plugin-opt=/opt/rh/devtoolset-7/root/usr/libexec/gcc/x86_64-redhat-linux/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cc5PUWu4.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_b58e0 /lib/../lib64/crt1.o /lib/../lib64/crti.o /opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/crtbegin.o -L/opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7 -L/opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/../../.. CMakeFiles/cmTC_b58e0.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/crtend.o /lib/../lib64/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_13770' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /opt/rh/devtoolset-7/root/usr/libexec/gcc/x86_64-redhat-linux/7/collect2 -plugin /opt/rh/devtoolset-7/root/usr/libexec/gcc/x86_64-redhat-linux/7/liblto_plugin.so -plugin-opt=/opt/rh/devtoolset-7/root/usr/libexec/gcc/x86_64-redhat-linux/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccT27vW0.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_13770 /lib/../lib64/crt1.o /lib/../lib64/crti.o /opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/crtbegin.o -L/opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7 -L/opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/../../.. CMakeFiles/cmTC_13770.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/crtend.o /lib/../lib64/crtn.o]
     arg [/opt/rh/devtoolset-7/root/usr/libexec/gcc/x86_64-redhat-linux/7/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/opt/rh/devtoolset-7/root/usr/libexec/gcc/x86_64-redhat-linux/7/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/opt/rh/devtoolset-7/root/usr/libexec/gcc/x86_64-redhat-linux/7/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/cc5PUWu4.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccT27vW0.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -280,7 +280,7 @@ Parsed CXX implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_b58e0] ==> ignore
+    arg [cmTC_13770] ==> ignore
     arg [/lib/../lib64/crt1.o] ==> ignore
     arg [/lib/../lib64/crti.o] ==> ignore
     arg [/opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/crtbegin.o] ==> ignore
@@ -289,7 +289,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
     arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
     arg [-L/opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/../../..] ==> dir [/opt/rh/devtoolset-7/root/usr/lib/gcc/x86_64-redhat-linux/7/../../..]
-    arg [CMakeFiles/cmTC_b58e0.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_13770.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -312,17 +312,17 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++1z] compiler features compiled with the following output:
-Change Dir: /home/ch/workspace/game/Project/game/server/build/CMakeFiles/CMakeTmp
+Change Dir: /home/ch/workspace/Yohkoh/Project/game/server/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/opt/rh/devtoolset-7/root/usr/bin/gmake" "cmTC_b294f/fast"
-/opt/rh/devtoolset-7/root/usr/bin/gmake -f CMakeFiles/cmTC_b294f.dir/build.make CMakeFiles/cmTC_b294f.dir/build
-gmake[1]: Entering directory '/home/ch/workspace/game/Project/game/server/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_b294f.dir/feature_tests.cxx.o
-/opt/rh/devtoolset-7/root/usr/bin/c++    -std=c++1z -o CMakeFiles/cmTC_b294f.dir/feature_tests.cxx.o -c /home/ch/workspace/game/Project/game/server/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_b294f
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b294f.dir/link.txt --verbose=1
-/opt/rh/devtoolset-7/root/usr/bin/c++       CMakeFiles/cmTC_b294f.dir/feature_tests.cxx.o  -o cmTC_b294f 
-gmake[1]: Leaving directory '/home/ch/workspace/game/Project/game/server/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/opt/rh/devtoolset-7/root/usr/bin/gmake" "cmTC_ec828/fast"
+/opt/rh/devtoolset-7/root/usr/bin/gmake -f CMakeFiles/cmTC_ec828.dir/build.make CMakeFiles/cmTC_ec828.dir/build
+gmake[1]: Entering directory '/home/ch/workspace/Yohkoh/Project/game/server/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ec828.dir/feature_tests.cxx.o
+/opt/rh/devtoolset-7/root/usr/bin/c++    -std=c++1z -o CMakeFiles/cmTC_ec828.dir/feature_tests.cxx.o -c /home/ch/workspace/Yohkoh/Project/game/server/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_ec828
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ec828.dir/link.txt --verbose=1
+/opt/rh/devtoolset-7/root/usr/bin/c++       CMakeFiles/cmTC_ec828.dir/feature_tests.cxx.o  -o cmTC_ec828 
+gmake[1]: Leaving directory '/home/ch/workspace/Yohkoh/Project/game/server/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -385,17 +385,17 @@ gmake[1]: Leaving directory '/home/ch/workspace/game/Project/game/server/build/C
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /home/ch/workspace/game/Project/game/server/build/CMakeFiles/CMakeTmp
+Change Dir: /home/ch/workspace/Yohkoh/Project/game/server/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/opt/rh/devtoolset-7/root/usr/bin/gmake" "cmTC_7f400/fast"
-/opt/rh/devtoolset-7/root/usr/bin/gmake -f CMakeFiles/cmTC_7f400.dir/build.make CMakeFiles/cmTC_7f400.dir/build
-gmake[1]: Entering directory '/home/ch/workspace/game/Project/game/server/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_7f400.dir/feature_tests.cxx.o
-/opt/rh/devtoolset-7/root/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_7f400.dir/feature_tests.cxx.o -c /home/ch/workspace/game/Project/game/server/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_7f400
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7f400.dir/link.txt --verbose=1
-/opt/rh/devtoolset-7/root/usr/bin/c++       CMakeFiles/cmTC_7f400.dir/feature_tests.cxx.o  -o cmTC_7f400 
-gmake[1]: Leaving directory '/home/ch/workspace/game/Project/game/server/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/opt/rh/devtoolset-7/root/usr/bin/gmake" "cmTC_ad4fc/fast"
+/opt/rh/devtoolset-7/root/usr/bin/gmake -f CMakeFiles/cmTC_ad4fc.dir/build.make CMakeFiles/cmTC_ad4fc.dir/build
+gmake[1]: Entering directory '/home/ch/workspace/Yohkoh/Project/game/server/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ad4fc.dir/feature_tests.cxx.o
+/opt/rh/devtoolset-7/root/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_ad4fc.dir/feature_tests.cxx.o -c /home/ch/workspace/Yohkoh/Project/game/server/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_ad4fc
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ad4fc.dir/link.txt --verbose=1
+/opt/rh/devtoolset-7/root/usr/bin/c++       CMakeFiles/cmTC_ad4fc.dir/feature_tests.cxx.o  -o cmTC_ad4fc 
+gmake[1]: Leaving directory '/home/ch/workspace/Yohkoh/Project/game/server/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -458,17 +458,17 @@ gmake[1]: Leaving directory '/home/ch/workspace/game/Project/game/server/build/C
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /home/ch/workspace/game/Project/game/server/build/CMakeFiles/CMakeTmp
+Change Dir: /home/ch/workspace/Yohkoh/Project/game/server/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/opt/rh/devtoolset-7/root/usr/bin/gmake" "cmTC_04ad7/fast"
-/opt/rh/devtoolset-7/root/usr/bin/gmake -f CMakeFiles/cmTC_04ad7.dir/build.make CMakeFiles/cmTC_04ad7.dir/build
-gmake[1]: Entering directory '/home/ch/workspace/game/Project/game/server/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_04ad7.dir/feature_tests.cxx.o
-/opt/rh/devtoolset-7/root/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_04ad7.dir/feature_tests.cxx.o -c /home/ch/workspace/game/Project/game/server/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_04ad7
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_04ad7.dir/link.txt --verbose=1
-/opt/rh/devtoolset-7/root/usr/bin/c++       CMakeFiles/cmTC_04ad7.dir/feature_tests.cxx.o  -o cmTC_04ad7 
-gmake[1]: Leaving directory '/home/ch/workspace/game/Project/game/server/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/opt/rh/devtoolset-7/root/usr/bin/gmake" "cmTC_706b6/fast"
+/opt/rh/devtoolset-7/root/usr/bin/gmake -f CMakeFiles/cmTC_706b6.dir/build.make CMakeFiles/cmTC_706b6.dir/build
+gmake[1]: Entering directory '/home/ch/workspace/Yohkoh/Project/game/server/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_706b6.dir/feature_tests.cxx.o
+/opt/rh/devtoolset-7/root/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_706b6.dir/feature_tests.cxx.o -c /home/ch/workspace/Yohkoh/Project/game/server/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_706b6
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_706b6.dir/link.txt --verbose=1
+/opt/rh/devtoolset-7/root/usr/bin/c++       CMakeFiles/cmTC_706b6.dir/feature_tests.cxx.o  -o cmTC_706b6 
+gmake[1]: Leaving directory '/home/ch/workspace/Yohkoh/Project/game/server/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -531,17 +531,17 @@ gmake[1]: Leaving directory '/home/ch/workspace/game/Project/game/server/build/C
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /home/ch/workspace/game/Project/game/server/build/CMakeFiles/CMakeTmp
+Change Dir: /home/ch/workspace/Yohkoh/Project/game/server/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/opt/rh/devtoolset-7/root/usr/bin/gmake" "cmTC_17dd8/fast"
-/opt/rh/devtoolset-7/root/usr/bin/gmake -f CMakeFiles/cmTC_17dd8.dir/build.make CMakeFiles/cmTC_17dd8.dir/build
-gmake[1]: Entering directory '/home/ch/workspace/game/Project/game/server/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_17dd8.dir/feature_tests.cxx.o
-/opt/rh/devtoolset-7/root/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_17dd8.dir/feature_tests.cxx.o -c /home/ch/workspace/game/Project/game/server/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_17dd8
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_17dd8.dir/link.txt --verbose=1
-/opt/rh/devtoolset-7/root/usr/bin/c++       CMakeFiles/cmTC_17dd8.dir/feature_tests.cxx.o  -o cmTC_17dd8 
-gmake[1]: Leaving directory '/home/ch/workspace/game/Project/game/server/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/opt/rh/devtoolset-7/root/usr/bin/gmake" "cmTC_0a0fd/fast"
+/opt/rh/devtoolset-7/root/usr/bin/gmake -f CMakeFiles/cmTC_0a0fd.dir/build.make CMakeFiles/cmTC_0a0fd.dir/build
+gmake[1]: Entering directory '/home/ch/workspace/Yohkoh/Project/game/server/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_0a0fd.dir/feature_tests.cxx.o
+/opt/rh/devtoolset-7/root/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_0a0fd.dir/feature_tests.cxx.o -c /home/ch/workspace/Yohkoh/Project/game/server/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_0a0fd
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0a0fd.dir/link.txt --verbose=1
+/opt/rh/devtoolset-7/root/usr/bin/c++       CMakeFiles/cmTC_0a0fd.dir/feature_tests.cxx.o  -o cmTC_0a0fd 
+gmake[1]: Leaving directory '/home/ch/workspace/Yohkoh/Project/game/server/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers

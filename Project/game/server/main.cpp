@@ -52,9 +52,9 @@ void RpcStep(connection* conn, uint32_t room_id, uint32_t id, int x, int y)
     return GameHall.Step(room_id, id, x, y);
 }
 
-char RpcJudge(connection* conn, uint32_t room_id, uint32_t id)
+char RpcJudge(connection* conn, uint32_t room_id)
 {
-    return GameHall.Judge(room_id, id);
+    return GameHall.Judge(room_id);
 }
 
 int main() 
