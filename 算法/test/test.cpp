@@ -9,11 +9,11 @@ class Solution
 public:
 	vector<string> restoreIpAddresses(string s)
 	{
-		m_result = _restoreIpAddresses(s);
+		_restoreIpAddresses(s);
 		return m_result;
 	}
 private:
-	vector<string> _restoreIpAddresses(string s)
+	void _restoreIpAddresses(string s)
 	{
 		int flag = 0;
 		string temp;
@@ -72,7 +72,6 @@ private:
 				}
 			}		
 		}
-		return m_result;
 	}
 
 	// 加入 .
