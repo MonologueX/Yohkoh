@@ -10,6 +10,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <sys/stat.h>
+#include <sys/wait.h>
 #include <sys/socket.h>
 #include <sys/types.h>
 #include <sys/sendfile.h>
@@ -92,6 +93,10 @@ public:
     {
         return m_resource_size;
     }
+    void SetResourceSize(int rs)
+    {
+        m_resource_size = rs;
+    }
 
     std::string& GetParam()
     {
@@ -115,7 +120,7 @@ public:
 
     void UriParse()
     {
-        if (strcasecmp(m_method.c_str(), "GET"))
+        if (strcasecmp(m_method.c_str(), "GET") == 0)
         {
             std::size_t pos = m_uri.find('?');
             if (std::string::npos != pos)
@@ -365,24 +370,27 @@ public:
         {
             recv(m_sock, &c, 1, 0);
             text.push_back(c);
+            i++;
         }
         param = text;
     }
 
     void SendResponse(Response*& rsp, Request*& req, bool cgi)
     {
+        std::string& rsp_line = rsp->m_response_line;
+        std::string& rsp_head = rsp->m_response_head;
+        std::string& rsp_blank = rsp->m_response_blank;
+        send(m_sock, rsp_line.c_str(), rsp_line.size(), 0);
+        send(m_sock, rsp_head.c_str(), rsp_head.size(), 0);
+        send(m_sock, rsp_blank.c_str(), rsp_blank.size(), 0);
         if (cgi)
         {
+            std::string& rsp_text = rsp->m_response_text;
+            send(m_sock, rsp_text.c_str(), rsp_text.size(), 0);
         }
         else 
         {
-            std::string& rsp_line = rsp->m_response_line;
-            std::string& rsp_head = rsp->m_response_head;
-            std::string& rsp_blank = rsp->m_response_blank;
             int& fd = rsp->m_fd;
-            send(m_sock, rsp_line.c_str(), rsp_line.size(), 0);
-            send(m_sock, rsp_head.c_str(), rsp_head.size(), 0);
-            send(m_sock, rsp_blank.c_str(), rsp_blank.size(), 0);
             sendfile(m_sock, fd, NULL, req->GetResourceSize());
         }
     }
@@ -402,7 +410,7 @@ private:
 class Entry
 {
 public:
-    static int ProcessNonCgi(Connect*& conn, Request*& req, Response*& rsp)
+    static void ProcessNonCgi(Connect*& conn, Request*& req, Response*& rsp)
     {
         int &code = rsp->m_code;
         rsp->MakeStatusLine();
@@ -410,12 +418,69 @@ public:
         rsp->OpenResource(req);
         conn->SendResponse(rsp, req, false);
     }
-    static int ProcessRespomse(Connect*& conn, Request*& req, Response*& rsp)
+
+    static void ProcessCgi(Connect*& conn, Request*& req, Response*& rsp)
+    {
+        int &code = rsp->m_code;
+        int input[2];
+        int output[2];
+        std::string& param = req->GetParam();
+        std::string& rsp_text = rsp->m_response_text;
+        pipe(input);
+        pipe(output);
+        pid_t id = fork();
+        if (id < 0)
+        {
+            LOG(ERROR, "Fork error!");
+            code = NOT_FOUND;
+            return;
+        }
+        else if (id == 0)
+        {
+            close(input[1]);
+            close(output[0]);
+            std::string cl_env = "Content-Length=";
+            int size = param.size();
+            cl_env += (ProtocolUtil::IntToString(size)); 
+            putenv((char *)cl_env.c_str());
+
+            dup2(input[0], 0);
+            dup2(output[1], 1);
+            const std::string& path = req->GetPath();
+            execl(path.c_str(), path.c_str(), NULL);
+            exit(1);
+        }
+        else 
+        {
+            close(input[0]);
+            close(output[1]);
+            size_t total = 0;
+            size_t size = param.size();
+            size_t cur = 0;
+            const char* p = param.c_str();
+            while (total < size && (cur = write(input[1], p + total, size- total)) > 0)
+            {
+                total += cur;
+            }
+            char c;
+            while (read(output[0], &c, 1) > 0)
+            {
+                rsp_text.push_back(c);
+            }
+            waitpid(id, NULL, 0);
+            close(input[1]);
+            close(output[0]);
+            rsp->MakeStatusLine();
+            req->SetResourceSize(rsp_text.size());
+            rsp->MakeResponseHead(req);
+            conn->SendResponse(rsp, req, true);
+        }
+    }
+    static void ProcessRespomse(Connect*& conn, Request*& req, Response*& rsp)
     {
         if (req->IsCgi())
         {
-            //TODO
-            //ProcessCgi();
+            ProcessCgi(conn, req, rsp);
         }
         else 
         {
