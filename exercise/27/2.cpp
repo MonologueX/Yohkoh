@@ -56,6 +56,7 @@ private:
 		{
 			int temp = str1[i] - '0' + carry;
 			carry = temp / 10;
+			temp = temp % 10;
 			result += std::to_string(temp);
 		}
 		if (carry)
