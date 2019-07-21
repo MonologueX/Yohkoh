@@ -1,15 +1,15 @@
 #!/bin/bash 
 
-i=0;
-((i++))
-echo $i
+#i=0;
+#((i++))
+#echo $i
 
-#创建50个文件
-#i=1
-#for ((; i <= 50; i++))
-#do 
-#    touch file$i
-#done
+创建50个文件
+i=1
+for ((; i <= 50; i++))
+do 
+    touch file$i
+done
 
 #str="you are great man!"
 #echo `expr index "$str" are`
