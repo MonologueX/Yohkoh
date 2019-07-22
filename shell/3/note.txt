@@ -1,0 +1,60 @@
+case 
+case $mystring in 
+    [Ss]tart | -s )
+        echo "start!"
+        ;;
+    'stop' )
+        echo "stop!"
+        ;;
+    * )
+        echo "default!"
+        ;;
+esac
+
+for i in {0..9}
+do
+    :
+done
+for i in {0..9} {a..f}
+for i in {0..9}{a..f}
+while [ condition ]
+do
+    :
+done
+until 与 while 相反
+
+死循环
+1>
+for (( ;; ))
+do 
+    echo "haha"
+    sleep 1
+done
+
+2>
+while :
+do 
+    echo "haha"
+    sleep 1
+done
+
+3>
+while true
+do 
+    echo "haha"
+    sleep 1
+done
+
+4>
+until false
+do 
+    echo "haha"
+    sleep 1
+done
+
+特殊变量
+命令行参数: $0 $1 $2 ...
+命令行参数数目-1: $#
+argv: $@
+返回值: $?
+当前进程pid: $$
