@@ -1,0 +1,10 @@
+# 函数 定义
+function MyFun()
+{
+    echo "haha"
+}
+
+# 使用
+MyFun
+sh shell.sh < file
+cat file | sh shell.sh
