@@ -1,6 +1,15 @@
 #pragma once
 #include <iostream>
 
+template <typename K>
+struct KeyToIntDef
+{
+    const K& operator()(const K& key)
+    {
+        return key;
+    }
+};
+
 ///////////////////////////////////////////////
 //  素数
 ///////////////////////////////////////////////
