@@ -1,0 +1,73 @@
+awk '{print}' text.txt
+第一列
+awk '{print $1}' text.txt
+第一列到第三列
+awk '{print $1 $2 $3}' text.txt
+awk '{print $1 "\t" $2 "\t" $3}' text.txt
+
+NR:有多少行
+NF:有多少列
+record:row
+field:col
+, 加分隔符，默认" ", 空格
+
+打印第二列等于3
+awk '$2 == 3{print $1 "\t" $2 "\t" $3}' text.txt
+第三列等于 ch
+awk '$3 == "ch"{print $1 "\t" $2 "\t" $3}' text.txt
+awk '{print $1 $2}'手动输入 
+FS:输入分隔符
+OFS:输出分隔符
+awk 'BEGIN{FS=","}{print $1 $2}'手动输入 
+awk 'BEGIN{FS=","; OFS=","}{print $1 $2}'手动输入 
+FILENAME
+awk 'BEGIN{FS=","; OFS=","}{print FILENAME $0}' a.txt b.txt  
+第三列为 xxx
+awk '$3 == "ch"{$3="xxx" print $1 "\t" $2 "\t" $3}' text.txt
+打印最后一列
+awk '$3 == "ch"{print $NF}' text.txt
+使用 awk 计算 
+awk '{a=1; b=2; c=3; print a+b+c}'
+先计算运算，后计算字符串
+
+正则表达式
+/abc/
+/a.c/ 一个
+/a\.c/ 一个
+
+^:开始
+$:结尾
+/^abc/
+/abc$/
+
+[]
+/a[bfd]c/ 一个
+/a[a-z]c/ 一个
+/a[a-zA-Z]c/ 一个
+^ 在 [] 里面是取反
+/a[^a-z]c/ 一个
+
+*:0次或多次
++:至少一次
+/a+b/
+ab
+aaab
+
+?
+/a?b/
+b
+ab
+
+{}
+/ab{3}c/
+abbbc 
+/ab{2,3}c/
+abbc 
+abbbc 
+/ab{2,}c/
+
+()
+/(ab)c/
+ababc
+abc
+abbac X
