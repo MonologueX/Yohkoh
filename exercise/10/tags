@@ -1,0 +1,22 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Board	q_1.cpp	/^class Board {$/;"	c	file:
+CalSum	q_2.cpp	/^	void CalSum(std::string str)$/;"	f	class:Solution	file:
+Length	q_2.cpp	/^	void Length(std::string str)$/;"	f	class:Solution	file:
+Num	q_2.cpp	/^	void Num(std::string str)$/;"	f	class:Solution	file:
+Print	q_2.cpp	/^	void Print(std::string str)$/;"	f	class:Solution
+Solution	q_2.cpp	/^	Solution()$/;"	f	class:Solution
+Solution	q_2.cpp	/^class Solution$/;"	c	file:
+StrChar	q_2.cpp	/^	void StrChar(std::string str)$/;"	f	class:Solution	file:
+Symbal	q_2.cpp	/^	void Symbal(std::string str)$/;"	f	class:Solution	file:
+checkWon	q_1.cpp	/^    bool checkWon(vector<vector<int> > board) {$/;"	f	class:Board
+m_STR	q_2.cpp	/^	int m_STR;$/;"	m	class:Solution	file:
+m_num	q_2.cpp	/^	int m_num;$/;"	m	class:Solution	file:
+m_str	q_2.cpp	/^	int m_str;$/;"	m	class:Solution	file:
+m_sum	q_2.cpp	/^	int m_sum;$/;"	m	class:Solution	file:
+m_symbal	q_2.cpp	/^	int m_symbal;$/;"	m	class:Solution	file:
+main	q_2.cpp	/^int main()$/;"	f

@@ -58,3 +58,4 @@ done
 argv: $@
 返回值: $?
 当前进程pid: $$
+shift: 左移

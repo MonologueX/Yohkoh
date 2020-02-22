@@ -72,6 +72,6 @@ int main()
 	string m_text; string m_parttern;
 	m_text += "ABABCABAA";
 	m_parttern += "ABABABCABAAGJHFR";
-	KmpSearch(m_parttern, m_text);
+	KmpSearch(m_text, m_parttern);
 	return 0;
 }

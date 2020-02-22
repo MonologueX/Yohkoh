@@ -215,25 +215,3 @@ class UrlUtil
             return strTemp;
         }
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

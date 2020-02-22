@@ -16,6 +16,7 @@ public:
 		for (int i = 1; i < n; i++)
 		{
 			int right = count, left = 0, middle;
+
 			while (left <= right)
 			{
 				middle = (left + right) / 2;
@@ -28,6 +29,7 @@ public:
 					right = middle - 1;
 				}
 			}
+
 			help[left] = A[i]; 
 			if (left > count)
 				count = left;

@@ -27,3 +27,6 @@
 
 if then elif else 
 : 空语句
+
+&& if then 
+|| if not then

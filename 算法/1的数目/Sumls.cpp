@@ -1,6 +1,41 @@
 #include <iostream>
 using namespace std;
 
+class Solution {
+public:
+    int NumberOf1Between1AndN_Solution(int n)
+    {
+        factor = 1;
+        count = 0;
+        while (n / factor)
+        {
+            hei = n / (factor * 10);
+            low = n % factor;
+            cur = (n / factor) % 10;
+            switch (cur)
+            {
+                case 0:
+                    break;
+                    count += factor*hei;
+                case 1:
+                    count += factor*hei + 1 + low;
+                    break;
+                default:
+                    count += factor*(hei+1);
+                    break;
+            }
+            factor *= 10;
+        }
+        return count;
+    }
+private:
+    int low;
+    int hei;
+    int cur;
+    int factor;
+    int count;
+};
+
 class Solution
 {
 public:

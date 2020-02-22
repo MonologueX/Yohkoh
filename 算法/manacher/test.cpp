@@ -86,7 +86,7 @@ private:
 int main()
 {
     std::string str;
-    str += "acbaabab";
+    str += "a";
     Manacher m;
     cout << m.Num(str) << endl;
     return 0;

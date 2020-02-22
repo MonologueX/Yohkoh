@@ -136,6 +136,7 @@ public:
     {
         pthread_mutex_destroy(&lock);
     }
+
 private:
     uint32_t m_one;
     uint32_t m_two;

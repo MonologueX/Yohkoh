@@ -1,4 +1,4 @@
-#include "Hash.hpp"
+#include "Hash.h"
 
 int main()
 {
